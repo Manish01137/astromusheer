@@ -1155,3 +1155,464 @@ main {
     justify-content: center;
   }
 }
+
+
+/* ---------- Big WhatsApp Button Section ---------- */
+.top-whatsapp-section {
+  background: linear-gradient(90deg, #000000, #1a1a1a);
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid rgba(212, 175, 55, 0.2);   /* gold accent line */
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+/* The main button */
+.top-whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #25d366;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 16px 40px;      /* big and bold */
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+/* WhatsApp icon size */
+.top-whatsapp-btn i {
+  font-size: 1.6rem;
+}
+
+/* Hover effect */
+.top-whatsapp-btn:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.05);
+}
+
+/* Slight pulsing glow for visibility */
+@keyframes pulse-glow {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+  70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+.top-whatsapp-btn {
+  animation: pulse-glow 2.5s infinite;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .top-whatsapp-btn {
+    font-size: 1.05rem;
+    padding: 14px 28px;
+  }
+  .top-whatsapp-btn i {
+    font-size: 1.4rem;
+  }
+}
+
+
+/* ---------- Big WhatsApp Button in About Section ---------- */
+.about-whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #25d366;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 16px 40px;      /* 🔹 Large size */
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  margin-top: 25px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* WhatsApp icon */
+.about-whatsapp-btn i {
+  font-size: 1.6rem;
+}
+
+/* Hover animation */
+.about-whatsapp-btn:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.05);
+}
+
+/* Optional pulsing glow */
+@keyframes pulse-glow {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+  70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+.about-whatsapp-btn {
+  animation: pulse-glow 2.5s infinite;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .about-whatsapp-btn {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 1.1rem;
+  }
+  .about-whatsapp-btn i {
+    font-size: 1.4rem;
+  }
+}
+
+
+/* ---------- About Section ---------- */
+.about-section {
+  background-color: #0b0b0b;
+  color: #fff;
+  padding: 70px 20px;
+}
+
+.section-title {
+  text-align: center;
+  color: #d4af37;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Images Row (two images) */
+.about-images.two-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.about-img {
+  flex: 1 1 500px;  /* responsive width */
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* images should show fully, not cropped */
+.about-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain; /* ensures full image visible */
+  background: #000;    /* filler background */
+  transition: transform 0.5s ease;
+}
+
+.about-img:hover img {
+  transform: scale(1.03);
+}
+
+/* Text Area */
+.about-text {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-text h3 {
+  color: #d4af37;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  color: #ddd;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* Big WhatsApp Button */
+.about-whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #25d366;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 16px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  margin-top: 25px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.about-whatsapp-btn i {
+  font-size: 1.6rem;
+}
+
+.about-whatsapp-btn:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.05);
+}
+
+/* Small Pulse Animation */
+@keyframes pulse-glow {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+  70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+.about-whatsapp-btn {
+  animation: pulse-glow 2.5s infinite;
+}
+
+/* Responsive Fixes */
+@media (max-width: 900px) {
+  .about-images.two-images {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-img {
+    max-width: 90%;
+  }
+}
+
+
+/* ---------- About Section ---------- */
+.about-section {
+  background-color: #0b0b0b;
+  color: #fff;
+  padding: 70px 20px;
+}
+
+.section-title {
+  text-align: center;
+  color: #d4af37;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* --- Images Row (2 images side-by-side on desktop) --- */
+.about-images.two-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.about-img {
+  flex: 1 1 500px;
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+.about-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: #000;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.about-img:hover img {
+  transform: scale(1.03);
+}
+
+/* --- Text Section --- */
+.about-text {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.about-text h3 {
+  color: #d4af37;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  color: #ddd;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* --- WhatsApp Button --- */
+.about-whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #25d366;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 16px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  margin-top: 25px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.about-whatsapp-btn i {
+  font-size: 1.6rem;
+}
+
+.about-whatsapp-btn:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.05);
+}
+
+@keyframes pulse-glow {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+  70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+.about-whatsapp-btn {
+  animation: pulse-glow 2.5s infinite;
+}
+
+/* ---------- Responsive Fixes ---------- */
+@media (max-width: 900px) {
+  .about-section {
+    padding: 50px 15px;
+  }
+
+  .about-images.two-images {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;               /* 🔹 smaller gap between stacked images */
+    margin-bottom: 20px;     /* 🔹 tighter spacing below images */
+  }
+
+  .about-img {
+    max-width: 100%;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  }
+
+  .about-text {
+    margin-top: 10px;        /* 🔹 reduces extra white space */
+  }
+
+  .about-text h3 {
+    font-size: 1.4rem;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .about-whatsapp-btn {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 1.1rem;
+  }
+}
+
+/* ---------- Tighten vertical spacing on small screens ---------- */
+@media (max-width: 900px) {
+
+  /* Reduce large section paddings that create big gaps */
+  .hero,
+  .about-section,
+  .services-section,
+  .top-banner,
+  .two-banner,
+  .top-whatsapp-section {
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
+  }
+
+  /* Prevent hero/banner forced full-viewport min-height on mobile */
+  .hero-fullbleed,
+  .hero,
+  .hero-fullwidth,
+  .two-banner,
+  .top-banner {
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  /* Clamp banner & about images so they don't create huge vertical blocks */
+  .banner-img,
+  .banner-box,
+  .about-img {
+    max-height: 220px !important;   /* choose 180-260 to taste */
+    height: auto !important;
+  }
+
+  .banner-img img,
+  .banner-box img,
+  .about-img img,
+  .hero-image img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important; /* ensure whole image visible without stretching */
+  }
+
+  /* Reduce spacing between stacked images and following text */
+  .about-images.two-images,
+  .about-images,
+  .services-grid {
+    gap: 10px !important;
+    margin-bottom: 14px !important;
+  }
+
+  /* Reduce title spacing */
+  .section-title {
+    margin-bottom: 18px !important;
+    font-size: 1.3rem !important;
+  }
+
+  /* Make WhatsApp button full width and keep it floating (so it doesn't push content) */
+  .about-whatsapp-btn,
+  .top-whatsapp-btn {
+    width: 100% !important;
+    padding: 12px 0 !important;
+    box-sizing: border-box;
+  }
+
+  /* If body has padding-top to accommodate fixed header, reduce it on mobile */
+  body {
+    padding-top: 56px !important; /* adjust to header height on mobile (reduce from desktop value) */
+  }
+
+  /* Remove extra top/bottom margins on any direct .container children */
+  .container > * {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* If something is accidentally creating an empty tall block, make it collapsible */
+  .spacer, .empty-block {
+    display: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+/* Optional: tiny visual debug borders (uncomment while debugging)
+@media (max-width:900px){
+  .about-images.two-images, .banner-container, .hero-inner { outline: 1px dashed rgba(255,255,255,0.05); }
+}
+*/
